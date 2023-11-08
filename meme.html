@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Maker</title>
+    <link rel="stylesheet" href="css/meme.css"/>
+    <link href = "css/reset.css"/>
+</head>
+<body>
+    <div class="color-options">
+        <input type="color" id="color">
+        <div class="color-option" style="background-color: #1abc9c"; 
+        data-color="#1abc9c"></div>
+        <div class="color-option" style="background-color: #3498db"; 
+        data-color="#3498db"></div>
+        <div class="color-option" style="background-color: #34495e"; 
+        data-color="#34495e"></div>
+        <div class="color-option" style="background-color: #27ae60"; 
+        data-color="#27ae60"></div>
+        <div class="color-option" style="background-color: #8e44ad"; 
+        data-color="#8e44ad"></div>
+        <div class="color-option" style="background-color: #f1c40f"; 
+        data-color="#f1c40f"></div>
+        <div class="color-option" style="background-color: #e74c3c"; 
+        data-color="#e74c3c"></div>
+        <div class="color-option" style="background-color: #95a5a6"; 
+        data-color="#95a5a6"></div>
+        <div class="color-option" style="background-color: #d35400"; 
+        data-color="#d35400"></div>
+        <div class="color-option" style="background-color: #2ecc71"; 
+        data-color="#2ecc71"></div>
+        <div class="color-option" style="background-color: #e67e22"; 
+        data-color="#e67e22"></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+        <label>Pen-Size🖌️<br>
+        <br><input id="line-width", type="range" min="1", max="10"value="5"></label>
+<button id ="mode-btn">DrawMode🎨</button>
+<button id="Fill-btn">Fill Canvas🏮</button>
+<div class="fonts">
+    <label>Font-Style✒️<br>
+    <br><select id = "font-styles">
+        <option value="" selected disabled>Font</option>
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Sans-Serif">Sans-Serif</option>
+        <option value="Time">Time</option>
+    </select></label>
+        <label for="font-size">Font-Size🖍️<br>
+        <br><input id="font-size" type="range" min="10", max="50" value="20"></label>
+</div>
+<input type ="text" placeholder="Add text here!" id = "text" />
+</div>
+<div class="btns-2">
+<button id ="destroy-btn">Reset🧨</button>
+<button id ="eraser-btn">Erase❌</button>
+ <!-- accept 받아들이는 파일의 종류 제한. img/*는 포멧 상관 없이 이미지만 받아들인다는 의미이다.-->
+    <!-- file input은꾸미기가 어렵다. label감싸서 감추고 가짜를 보여줄 수는 있다고 한다.-->
+    <!-- for의 값이 id의 값과 같으면 해당 id의 요소에 접근하는 역할을 수행한다? 두 요소의 거리는 상관 없음.-->
+    <!-- label안에 없어도 됨.-->
+<label for="file">
+    Add Photo📷<input type ="file" accept="img/*" id="file"/>
+</label>
+<button id = "saveimage">Save📂</button></div>
+    <script src="js/drawing.js"></script>
+</body>
+</html>

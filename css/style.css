@@ -75,3 +75,15 @@ ul#todo-list{
    z-index: -1;
    animation: fadein 0.5s linear;
 }
+
+a{
+    all:unset;
+    position:absolute;
+    display: flex;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 2.0em;
+    font-weight: 500;
+    border-radius: 10px;
+    color : white;
+}
