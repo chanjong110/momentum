@@ -46,14 +46,14 @@ input#color{
     align-self: center;
 }
 
-.btns, .btns-2{
+.btns, .btns-2, a{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 button,
-label{
+label, a{
     all:unset;
     padding: 10px 0px;
     text-align: center;
@@ -63,6 +63,10 @@ label{
     cursor: pointer;
     border-radius: 10px;
     transition: opacity linear .1s;
+}
+
+a:hover{
+    opacity: 0.85;
 }
 
 button:hover{
